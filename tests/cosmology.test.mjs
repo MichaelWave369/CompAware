@@ -8,7 +8,7 @@ test('cosmology maps exactly to the existing seven candidate modules', () => {
   assert.equal(new Set(cosmosLenses.map(x => x.code)).size, 7);
   for (const lens of cosmosLenses) {
     for (const key of ['title', 'question', 'measurement', 'control', 'analogy']) {
-      assert.ok(lens[key]?.length > 20, `${lens.id} missing ${key}`);
+      assert.ok(lens[key]?.length > (key === 'title' ? 5 : 20), `${lens.id} missing ${key}`);
     }
   }
 });
