@@ -30,7 +30,10 @@ Either lane can question the other. A useful challenge, a failed hypothesis and 
 - **PR #2:** CA-Haven simulated vessel, telemetry and checkpointing.
 - **PR #3:** Rung 2 deterministic sensor-health baseline comparison.
 - **PR #4:** CA-SC-01 Silicon Cosmology Atlas with distinct evidence classes.
-- **PR #5 (proposed):** Rung 3 noisy-signal decision demonstrator inspired by CA-SC-01.
+- **PR #5 (merged):** Rung 3 noisy-signal decision demonstrator inspired by CA-SC-01.
+- **PR #6 (proposed):** CA-SC-02 epistemic boundaries and engineering challenges for unknown calibration and provenance; interpretive, not experimental.
+
+**Handoff after #5:** Rung 3 is an exploratory software fixture, not a consciousness test or a preregistered study. The temporal filter is supplied with the scenario's true sensor accuracy and state-flip rate. CA-SC-02 asks what changes if those properties become unknown, drift or contradict self-reports. See [Epistemic Horizons](EPISTEMIC_HORIZONS.md).
 
 This is a human-coordinated exchange, not a claim that two AI systems are running independently or collaborating autonomously in the background.
 
