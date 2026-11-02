@@ -9,6 +9,7 @@ import HavenLab from './components/HavenLab.jsx';
 import HavenStudy from './components/HavenStudy.jsx';
 import SiliconCosmology from './components/SiliconCosmology.jsx';
 import NoisyDecisions from './components/NoisyDecisions.jsx';
+import CalibrationLab from './components/CalibrationLab.jsx';
 
 const repo = 'https://github.com/MichaelWave369/CompAware';
 const docs = (name) => repo + '/blob/main/docs/' + name + '.md';
@@ -209,6 +210,11 @@ function App() {
             <p>A deterministic demonstration of uncertain observations, costly rechecks and explicit decisions. Ground truth stays in the scoring environment, not inside the controllers.</p>
           </div>
           <NoisyDecisions />
+          <div className="cal-section-head">
+            <div className="section-label"><span>R4</span><span className="line" /> CA-HAVEN / UNKNOWN CALIBRATION</div>
+          </div>
+          <CalibrationLab />
+          <a className="text-link" href={docs('RUNG_4_PROTOCOL')} target="_blank" rel="noreferrer">Read Rung 4 calibration-drift protocol <ArrowRight size={17}/></a>
           <a className="text-link" href={docs('RUNG_3_PROTOCOL')} target="_blank" rel="noreferrer">Read the noisy-decision protocol <ArrowRight size={17}/></a>
         </section>
 

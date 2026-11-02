@@ -21,6 +21,7 @@
 - [Rung 2 protocol](docs/RUNG_2_PROTOCOL.md): controlled state-tracking comparisons and explicit limits.
 - [Silicon Cosmology Atlas CA-SC-01](docs/SILICON_COSMOLOGY.md): philosophical inspiration separated from testable substrate, environmental and self-model questions.
 - [Epistemic Horizons CA-SC-02](docs/EPISTEMIC_HORIZONS.md): six-stage observation contract, critical Rung 3 assumptions and falsifiable challenge cases for the engineering lane.
+- [Rung 4 protocol](docs/RUNG_4_PROTOCOL.md): unknown calibration, delayed independent checks, held-out seed partitions and simple controls.
 - [Rung 3 protocol](docs/RUNG_3_PROTOCOL.md): noisy-observation decisions, costs, fixed baselines and reproducible exploratory results.
 - [Collaboration handoff](docs/COLLABORATION.md): alternating philosophy and engineering PR workflow.
 - [Research protocol](docs/RESEARCH_PROTOCOL.md): falsifiable experiments, controls, and limitations.
@@ -29,7 +30,7 @@
 
 ## Live React site
 
-A Vite + React research website is included in src/. It has two separate experiences: an illustrative seven-layer **architecture explorer**, and a real, bounded, rule-based **Haven Lab simulator** with instrumentation, baseline mode, sensor faults and memory-only checkpoints. Neither is an AI agent or awareness detector. Rung 2 adds a **deterministic comparative study** with the same sensor reports for a self-model, a one-bit last-report baseline and two constant baselines. The site can export a transparent JSON trial receipt; no claim of awareness follows from a result. The optional **Silicon Cosmology Atlas** maps seven physical/environmental research questions to the existing CA-V0 modules, with proposed tests and simple controls. It is an interpretive guide, not a live sensor or another experimental result. **Rung 3 Noisy Lab** adds a separate exploratory simulator with imperfect binary indicators, a recheck cost, four baseline policies, and an exportable per-tick receipt. Results are sensitive to explicitly chosen costs and assumptions.
+A Vite + React research website is included in src/. It has two separate experiences: an illustrative seven-layer **architecture explorer**, and a real, bounded, rule-based **Haven Lab simulator** with instrumentation, baseline mode, sensor faults and memory-only checkpoints. Neither is an AI agent or awareness detector. Rung 2 adds a **deterministic comparative study** with the same sensor reports for a self-model, a one-bit last-report baseline and two constant baselines. The site can export a transparent JSON trial receipt; no claim of awareness follows from a result. The optional **Silicon Cosmology Atlas** maps seven physical/environmental research questions to the existing CA-V0 modules, with proposed tests and simple controls. It is an interpretive guide, not a live sensor or another experimental result. **Rung 3 Noisy Lab** adds a separate exploratory simulator with imperfect binary indicators, a recheck cost, four baseline policies, and an exportable per-tick receipt. Results are sensitive to explicitly chosen costs and assumptions. **Rung 4 Calibration Lab** implements a direct response to CA-SC-02: unknown and drifting sensor reliability, paid independent verification, adaptive and simple calibration baselines, and separately reported exploratory seed partitions.
 
 Run locally:
 
