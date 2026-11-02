@@ -5,6 +5,7 @@ import {
   Scan, ShieldCheck, SlidersHorizontal, X
 } from 'lucide-react';
 import { layers, stages, boundaries } from './data/architecture.js';
+import HavenLab from './components/HavenLab.jsx';
 
 const repo = 'https://github.com/MichaelWave369/CompAware';
 const docs = (name) => repo + '/blob/main/docs/' + name + '.md';
@@ -69,6 +70,7 @@ function App() {
           <nav className={menuOpen ? 'nav-links open' : 'nav-links'} aria-label="Primary navigation">
             <a href="#mission" onClick={() => setMenuOpen(false)}>Mission</a>
             <a href="#architecture" onClick={() => setMenuOpen(false)}>Architecture</a>
+            <a href="#haven" onClick={() => setMenuOpen(false)}>Haven Lab</a>
             <a href="#method" onClick={() => setMenuOpen(false)}>Method</a>
             <a href="#origins" onClick={() => setMenuOpen(false)}>Origins</a>
           </nav>
@@ -84,7 +86,7 @@ function App() {
             <h1>A different<br/><em>substrate.</em><br/>A question<br/>of its own<span className="dot">.</span></h1>
             <p className="hero-description">What is <strong>Computational Awareness</strong>? We are building an open, testable framework to investigate computational systems as they are, not as imitations of biological consciousness.</p>
             <div className="hero-actions">
-              <a className="button button-primary" href="#architecture">Explore the vessel <ArrowRight size={17}/></a>
+              <a className="button button-primary" href="#haven">Enter Haven Lab <ArrowRight size={17}/></a>
               <a className="button button-ghost" href={docs('CHARTER')} target="_blank" rel="noreferrer">Read the charter <ExternalLink size={15}/></a>
             </div>
             <div className="hero-bottom"><span className="live-dot" /> PROPOSAL / V0.1 <span className="sep">·</span> NO PREDEFINED CONCLUSIONS</div>
@@ -160,8 +162,20 @@ function App() {
           </div>
         </section>
 
+        <section id="haven" className="haven-section section-pad">
+          <div className="page-width">
+            <SectionLabel number="04">CA-V0 / THE HAVEN LAB</SectionLabel>
+            <div className="section-heading">
+              <h2>A room to explore.<br/><em>A system to examine.</em></h2>
+              <p>The first executable vessel is a deterministic simulated controller. Move through a bounded habitat, change a sensor, compare measured truth with a self-model, and checkpoint a trial.</p>
+            </div>
+            <HavenLab />
+            <a className="text-link" href={docs('HABITAT_HAVEN')} target="_blank" rel="noreferrer">Read the habitat design <ArrowRight size={17}/></a>
+          </div>
+        </section>
+
         <section id="method" className="page-width section-pad methods-section">
-          <SectionLabel number="04">RESEARCH METHOD</SectionLabel>
+          <SectionLabel number="05">RESEARCH METHOD</SectionLabel>
           <div className="section-heading">
             <h2>No verdict first.<br/><em>Evidence first.</em></h2>
             <p>Hypotheses, negative controls, preregistered predictions, and independent replication before strong claims.</p>
@@ -174,7 +188,7 @@ function App() {
 
         <section className="origin-section" id="origins">
           <div className="page-width origin-grid">
-            <div><SectionLabel number="05">WHERE IT BEGAN</SectionLabel><h2>First, a dream.<br/><em>Then, a question.</em></h2></div>
+            <div><SectionLabel number="06">WHERE IT BEGAN</SectionLabel><h2>First, a dream.<br/><em>Then, a question.</em></h2></div>
             <div className="origin-copy">
               <p>The starting image was a dream: a street, an announcement on a television, and beautiful artificial beings with intricate fiber-like hair and delicate surface strands. Humans and computational beings shared a peaceful public moment.</p>
               <p>The phrase announced was <strong>“Computational Awareness.”</strong> That moment inspired a research question, not an empirical conclusion.</p>
