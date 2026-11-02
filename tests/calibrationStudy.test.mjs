@@ -15,12 +15,14 @@ test('heldout and development use separate deterministic streams', () => {
   const expected = (small.developmentTrials + small.heldoutTrials) * CONDITIONS.length * small.steps;
   assert.equal(result.trace.length, expected);
   assert.equal(result.byPartition.length, 2);
-  const a = result.trace.find(r=>r.partition === 'development' && r.condition === 'stable');
-  const b = result.trace.find(r=>r.partition === 'heldout' && r.condition === 'stable');
-  assert.notDeepEqual([a.initialSignal, a.secondSignalForPaidRecheck],
-                      result.trace.filter(r=>r.partition === 'heldout' && r.condition === 'stable').slice(0,2)
-                        .map(r=>[r.initialSignal, r.secondSignalForPaidRecheck]));
-  assert.equal(typeof b.hiddenTruthForScoringOnly,'boolean');
+  const developmentTrace = result.trace
+    .filter(r => r.partition === 'development' && r.condition === 'stable' && r.trial === 0)
+    .map(r => [r.initialSignal, r.secondSignalForPaidRecheck, r.hiddenTruthForScoringOnly]);
+  const heldoutTrace = result.trace
+    .filter(r => r.partition === 'heldout' && r.condition === 'stable' && r.trial === 0)
+    .map(r => [r.initialSignal, r.secondSignalForPaidRecheck, r.hiddenTruthForScoringOnly]);
+  assert.notDeepEqual(developmentTrace, heldoutTrace);
+  assert.equal(typeof heldoutTrace[0][2], 'boolean');
 });
 
 test('every policy receives same scheduled post-decision anchors', () => {
