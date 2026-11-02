@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import {
-  ArrowDownRight, ArrowRight, BookOpen, Check, ChevronRight, CircleDot,
-  Cpu, ExternalLink, FlaskConical, GitBranch, Github, Layers3, Menu,
-  Network, Orbit, Radio, Scan, ShieldCheck, SlidersHorizontal, Sparkles,
-  Waves, X
+  ArrowDownRight, ArrowRight, ChevronRight, CircleDot,
+  ExternalLink, FlaskConical, Github, Menu, Network,
+  Scan, ShieldCheck, SlidersHorizontal, X
 } from 'lucide-react';
 import { layers, stages, boundaries } from './data/architecture.js';
 
@@ -14,7 +13,7 @@ function SectionLabel({ children, number }) {
   return <div className="section-label"><span>{number}</span><span className="line" />{children}</div>;
 }
 
-function OrbitalVisual({ activeCount = 7 }) {
+function OrbitalVisual({ activeIds = layers.map(x => x.id) }) {
   const nodes = Array.from({ length: 7 }, (_, index) => {
     const a = (index * Math.PI * 2) / 7 - Math.PI / 2;
     return { cx: 200 + 123 * Math.cos(a), cy: 200 + 123 * Math.sin(a), n: index + 1 };
@@ -34,7 +33,7 @@ function OrbitalVisual({ activeCount = 7 }) {
         <circle cx="200" cy="200" r="123" fill="none" stroke="url(#ring)" strokeOpacity=".55"/>
         <circle cx="200" cy="200" r="88" fill="none" stroke="#6e92ac" strokeOpacity=".22" strokeDasharray="2 7" />
         {nodes.map((node, i) => (
-          <g key={node.n} opacity={i < activeCount ? 1 : .2}>
+          <g key={node.n} opacity={activeIds.includes(layers[i].id) ? 1 : .2}>
             <line x1="200" y1="200" x2={node.cx} y2={node.cy} stroke="url(#ring)" strokeOpacity=".28" strokeWidth="1.3"/>
             <circle cx={node.cx} cy={node.cy} r="16" fill="#111e30" stroke="#6ddbcf" strokeOpacity=".8" />
             <circle cx={node.cx} cy={node.cy} r="4" fill={i % 2 ? '#b5b7ff' : '#84e6d5'} />
@@ -147,7 +146,7 @@ function App() {
               </div>
               <div className="architecture-inspector">
                 <div className="inspector-top"><span><SlidersHorizontal size={15}/> CONCEPT EXPLORER</span><span>{enabled.length} / 7 SELECTED</span></div>
-                <div className="inspector-orb"><OrbitalVisual activeCount={enabled.length}/></div>
+                <div className="inspector-orb"><OrbitalVisual activeIds={enabled}/></div>
                 <div className="inspector-details">
                   <div className="detail-tag">{selectedLayer.category} / LAYER {selectedLayer.number}</div>
                   <h3>{selectedLayer.title}</h3>
