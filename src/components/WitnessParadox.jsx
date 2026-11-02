@@ -25,7 +25,7 @@ export default function WitnessParadox() {
           <div className="witness-world-label">HYPOTHETICAL WORLD 1 <span>FIXED</span></div>
           <h4>Equal reliability</h4>
           <div className="witness-readouts"><div><span>Sensor A accuracy</span><strong>{percent(base.a)}</strong></div><div><span>Sensor B accuracy</span><strong>{percent(base.b)}</strong></div></div>
-          <div className="witness-agreement">Observed agreement <strong>{percent(WITNESS_MODEL.targetAgreement)}</strong></div>
+          <div className="witness-agreement">Expected agreement <strong>{percent(WITNESS_MODEL.targetAgreement)}</strong></div>
         </article>
         <article className="witness-world witness-world-alternate">
           <div className="witness-world-label">HYPOTHETICAL WORLD 2 <span>ADJUSTABLE</span></div>
@@ -35,13 +35,13 @@ export default function WitnessParadox() {
           <input id="witness-a-range" type="range" min="70" max="95" step="5" value={selectedA}
             onChange={(event) => setSelectedA(Number(event.target.value))}/>
           <div className="witness-range-ends"><span>70%</span><span>95%</span></div>
-          <div className="witness-agreement">Observed agreement <strong>{percent(WITNESS_MODEL.targetAgreement)}</strong></div>
+          <div className="witness-agreement">Expected agreement <strong>{percent(WITNESS_MODEL.targetAgreement)}</strong></div>
         </article>
       </div>
 
       <div className="witness-observations">
         <div className="witness-section-title"><Split size={17} aria-hidden="true"/>
-          <strong>What an observer actually sees</strong><span>IDENTICAL PROBABILITIES</span>
+          <strong>Observer-visible model probabilities</strong><span>IDENTICAL PROBABILITIES</span>
         </div>
         <div className="witness-distribution" role="table" aria-label="Observable pair frequencies in both hypothetical worlds">
           <div role="row" className="witness-distribution-header"><span role="columnheader">Pair of reports</span><span role="columnheader">World 1</span><span role="columnheader">World 2</span></div>
