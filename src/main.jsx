@@ -7,6 +7,7 @@ import './styles-study.css';
 import './styles-cosmos.css';
 import './styles-horizon.css';
 import './styles-r3.css';
+import './styles-r4.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>

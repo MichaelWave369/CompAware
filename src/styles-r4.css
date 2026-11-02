@@ -1,0 +1,46 @@
+.cal-lab{margin-top:35px;background:#101c2c;border:1px solid #355566;border-radius:10px;overflow:hidden}
+.cal-intro{padding:30px}
+.cal-tag{display:flex;gap:10px;align-items:center;font:10px 'DM Mono',monospace;letter-spacing:.09em;color:#8ce2cf}
+.cal-intro h3{font:500 clamp(28px,3.3vw,42px)/1.18 'Space Grotesk',sans-serif;letter-spacing:-.05em;margin:19px 0}
+.cal-intro h3 em{font-style:normal;color:#b8bafa}
+.cal-intro p{font-size:13px;color:#b1c8d0;line-height:1.8;max-width:900px;margin:0}
+.cal-controls{display:flex;align-items:end;flex-wrap:wrap;gap:11px;padding:20px 26px;background:#192d3d;border-block:1px solid #365363}
+.cal-controls label{display:flex;flex-direction:column;gap:8px;color:#9cc6ca;font:9px 'DM Mono',monospace}
+.cal-controls input{min-height:39px;width:133px;max-width:100%;border:1px solid #41697b;border-radius:5px;padding:10px;background:#0b1928;color:#e1f5fa;font-size:13px}
+.cal-controls button,.cal-results-top button{min-height:39px;border:0;border-radius:5px;padding:10px 14px;background:#95e5d8;color:#08212d;font:700 12px 'DM Sans',sans-serif;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:9px}
+.cal-results-top button{border:1px solid #5b7788;background:#27495a;color:#d3ede8}
+.cal-empty{display:flex;gap:15px;align-items:center;justify-content:center;padding:35px 25px;color:#a4c0c8}
+.cal-empty p{font-size:12px;line-height:1.8;max-width:650px;margin:0}
+.cal-error{background:#493039;color:#ffd0bf;font-size:12px;padding:16px 28px}
+.cal-results{padding:25px}
+.cal-results-top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.cal-results-top>div{display:flex;flex-direction:column;gap:6px}
+.cal-results-top strong{font:600 18px 'Space Grotesk',sans-serif}
+.cal-results-top small{font:10px 'DM Mono',monospace;color:#89acbc}
+.cal-tabs{display:flex;gap:9px;margin-top:24px;flex-wrap:wrap}
+.cal-tabs button{cursor:pointer;padding:10px 15px;background:#182e40;color:#9ebfca;border:1px solid #3e5c70;border-radius:5px;font-size:12px}
+.cal-tabs button.selected{color:#071e27;background:#9fe8d8;border-color:#9fe8d8}
+.cal-clarifier{font-size:11px;color:#a0b9c5;line-height:1.75;margin:16px 0}
+.cal-table-wrap{max-width:100%;overflow-x:auto}
+.cal-table-wrap table{min-width:690px;width:100%;border-collapse:collapse}
+.cal-table-wrap th,.cal-table-wrap td{padding:12px 10px;text-align:left;border-bottom:1px solid #304b5a}
+.cal-table-wrap thead th{font:10px 'DM Mono',monospace;color:#91b6c5}
+.cal-table-wrap tbody th{font-size:12px;color:#e2f3f1}
+.cal-table-wrap tbody td{font:11px 'DM Mono',monospace;color:#b6d2d8}
+.cal-conditions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:25px}
+.cal-conditions article{padding:20px;background:#14283a;border:1px solid #2d4e5f;border-radius:7px;display:flex;flex-direction:column;gap:8px}
+.cal-conditions article>strong{font:600 15px 'Space Grotesk',sans-serif;color:#d9f3f0}
+.cal-conditions article>span{font-size:11px;color:#95b6c4}
+.cal-conditions article>div{margin-top:9px}
+.cal-conditions article p{margin:0;padding:8px 0;display:flex;justify-content:space-between;gap:8px;border-top:1px solid #2e4b5b}
+.cal-conditions article p span{font-size:11px;color:#a8c7d1}.cal-conditions article p b{font:11px 'DM Mono',monospace;color:#b0ebdf}
+.cal-receipt,.cal-boundary{display:flex;align-items:flex-start;gap:13px;padding:20px;background:#18313e;border:1px solid #3f6474;border-radius:7px;margin-top:22px}
+.cal-receipt>svg,.cal-boundary>svg{color:#9ce7d9;flex-shrink:0}
+.cal-receipt strong{font-size:13px;color:#dff6f0}
+.cal-receipt p,.cal-boundary p{font-size:12px;color:#a3bfcc;line-height:1.8;margin:6px 0 0}
+.cal-boundary{margin:0;border-radius:0;border:0;border-top:1px solid #375569;background:#162a3b}
+@media(max-width:750px){.cal-conditions{grid-template-columns:1fr}}
+@media(max-width:480px){.cal-intro,.cal-results{padding:19px}.cal-controls{padding:15px}
+.cal-controls label{flex:1 1 40%}.cal-controls input{width:100%}
+.cal-controls button,.cal-results-top button{width:100%}}
+
