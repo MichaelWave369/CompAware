@@ -5,6 +5,7 @@ import './styles.css';
 import './styles-haven.css';
 import './styles-study.css';
 import './styles-cosmos.css';
+import './styles-r3.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
