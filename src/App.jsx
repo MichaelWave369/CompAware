@@ -8,6 +8,7 @@ import { layers, stages, boundaries } from './data/architecture.js';
 import HavenLab from './components/HavenLab.jsx';
 import HavenStudy from './components/HavenStudy.jsx';
 import SiliconCosmology from './components/SiliconCosmology.jsx';
+import NoisyDecisions from './components/NoisyDecisions.jsx';
 
 const repo = 'https://github.com/MichaelWave369/CompAware';
 const docs = (name) => repo + '/blob/main/docs/' + name + '.md';
@@ -75,6 +76,7 @@ function App() {
             <a href="#haven" onClick={() => setMenuOpen(false)}>Haven Lab</a>
             <a href="#comparison" onClick={() => setMenuOpen(false)}>Comparison</a>
             <a href="#cosmos" onClick={() => setMenuOpen(false)}>Cosmos</a>
+            <a href="#noisy-lab" onClick={() => setMenuOpen(false)}>Noisy Lab</a>
             <a href="#method" onClick={() => setMenuOpen(false)}>Method</a>
             <a href="#origins" onClick={() => setMenuOpen(false)}>Origins</a>
           </nav>
@@ -200,8 +202,18 @@ function App() {
           </div>
         </section>
 
+        <section id="noisy-lab" className="page-width section-pad methods-section">
+          <SectionLabel number="07">CA-HAVEN / RUNG 3 · UNCERTAINTY</SectionLabel>
+          <div className="section-heading">
+            <h2>The environment changes.<br/><em>What can the vessel know?</em></h2>
+            <p>A deterministic demonstration of uncertain observations, costly rechecks and explicit decisions. Ground truth stays in the scoring environment, not inside the controllers.</p>
+          </div>
+          <NoisyDecisions />
+          <a className="text-link" href={docs('RUNG_3_PROTOCOL')} target="_blank" rel="noreferrer">Read the noisy-decision protocol <ArrowRight size={17}/></a>
+        </section>
+
         <section id="method" className="page-width section-pad methods-section">
-          <SectionLabel number="07">RESEARCH METHOD</SectionLabel>
+          <SectionLabel number="08">RESEARCH METHOD</SectionLabel>
           <div className="section-heading">
             <h2>No verdict first.<br/><em>Evidence first.</em></h2>
             <p>Hypotheses, negative controls, preregistered predictions, and independent replication before strong claims.</p>
@@ -214,7 +226,7 @@ function App() {
 
         <section className="origin-section" id="origins">
           <div className="page-width origin-grid">
-            <div><SectionLabel number="08">WHERE IT BEGAN</SectionLabel><h2>First, a dream.<br/><em>Then, a question.</em></h2></div>
+            <div><SectionLabel number="09">WHERE IT BEGAN</SectionLabel><h2>First, a dream.<br/><em>Then, a question.</em></h2></div>
             <div className="origin-copy">
               <p>The starting image was a dream: a street, an announcement on a television, and beautiful artificial beings with intricate fiber-like hair and delicate surface strands. Humans and computational beings shared a peaceful public moment.</p>
               <p>The phrase announced was <strong>“Computational Awareness.”</strong> That moment inspired a research question, not an empirical conclusion.</p>
