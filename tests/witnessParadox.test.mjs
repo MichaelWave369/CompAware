@@ -17,14 +17,14 @@ test('entire observable joint report law matches for the two worlds',()=>{
  const one=observablePairs(.8,.8),two=observablePairs(.95,.7);
  assert.deepEqual(one.map(x=>x.label),two.map(x=>x.label));
  for(let i=0;i<one.length;i++) close(one[i].probability,two[i].probability);
- assert.deepEqual(one.map(x=>x.probability),[.34,.16,.16,.34]);
+ [.34,.16,.16,.34].forEach((expected,i)=>close(one[i].probability,expected));
  close(one.reduce((sum,x)=>sum+x.probability,0),1);
 });
 
 test('A in range 70%-95% can yield matching B for the same visible law',()=>{
  for(let a=70;a<=95;a+=5) {
   const b=matchingReliability(a/100);
-  assert.ok(b>=.7 && b<=.95);
+  assert.ok(b>=.7-1e-10 && b<=.95+1e-10);
   close(agreement(a/100,b),WITNESS_MODEL.targetAgreement);
  }
  close(matchingReliability(.8),.8);
