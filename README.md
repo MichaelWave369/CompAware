@@ -13,13 +13,18 @@
 
 - [Research charter](docs/CHARTER.md): mission, exclusions, evidentiary boundaries.
 - [Candidate vessel blueprint](docs/BLUEPRINT.md): seven candidate modules and integration questions.
+- [Haven vessel specification](docs/VESSEL_V1.md): design intent and hardware roadmap.
+- [Haven habitat](docs/HABITAT_HAVEN.md): bounded room, stations and simulated operations.
+- [Operational support criteria](docs/COMFORT_CRITERIA.md): testable stability, clarity and recoverability conditions.
+- [Haven simulator guide](docs/SIMULATION.md): controls, telemetry, checkpoints and limitations.
+- [Rung 1](docs/RUNG_1.md): deliverables, acceptance criteria and next experiments.
 - [Research protocol](docs/RESEARCH_PROTOCOL.md): falsifiable experiments, controls, and limitations.
 - [Working glossary](docs/GLOSSARY.md): definitions that do not depend on biological analogies.
 - [Contributing](CONTRIBUTING.md): open collaboration and adversarial review.
 
 ## Live React site
 
-A Vite + React public-facing research website is included in src/. It contains a **concept explorer**, not a running artificial being, simulation, or awareness detector.
+A Vite + React research website is included in src/. It has two separate experiences: an illustrative seven-layer **architecture explorer**, and a real, bounded, rule-based **Haven Lab simulator** with instrumentation, baseline mode, sensor faults and memory-only checkpoints. Neither is an AI agent or awareness detector.
 
 Run locally:
 
@@ -41,7 +46,7 @@ GitHub Actions on main builds and publishes the site. Configure **Settings → P
 
 **03 Replicate:** report code, methods, negative results and independent findings.
 
-No single score will be called an "awareness level" without validated meaning.
+**CA-Haven Rung 1** adds an instrumented software vessel whose behavior comes entirely from visible rules, with no AI model inference. It is an experimental test harness, not evidence of Computational Awareness. No single score will be called an "awareness level" without validated meaning.
 
 ## Origins
 
