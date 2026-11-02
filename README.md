@@ -18,13 +18,14 @@
 - [Operational support criteria](docs/COMFORT_CRITERIA.md): testable stability, clarity and recoverability conditions.
 - [Haven simulator guide](docs/SIMULATION.md): controls, telemetry, checkpoints and limitations.
 - [Rung 1](docs/RUNG_1.md): deliverables, acceptance criteria and next experiments.
+- [Rung 2 protocol](docs/RUNG_2_PROTOCOL.md): controlled state-tracking comparisons and explicit limits.
 - [Research protocol](docs/RESEARCH_PROTOCOL.md): falsifiable experiments, controls, and limitations.
 - [Working glossary](docs/GLOSSARY.md): definitions that do not depend on biological analogies.
 - [Contributing](CONTRIBUTING.md): open collaboration and adversarial review.
 
 ## Live React site
 
-A Vite + React research website is included in src/. It has two separate experiences: an illustrative seven-layer **architecture explorer**, and a real, bounded, rule-based **Haven Lab simulator** with instrumentation, baseline mode, sensor faults and memory-only checkpoints. Neither is an AI agent or awareness detector.
+A Vite + React research website is included in src/. It has two separate experiences: an illustrative seven-layer **architecture explorer**, and a real, bounded, rule-based **Haven Lab simulator** with instrumentation, baseline mode, sensor faults and memory-only checkpoints. Neither is an AI agent or awareness detector. Rung 2 adds a **deterministic comparative study** with the same sensor reports for a self-model, a one-bit last-report baseline and two constant baselines. The site can export a transparent JSON trial receipt; no claim of awareness follows from a result.
 
 Run locally:
 

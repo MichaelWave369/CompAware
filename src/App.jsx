@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { layers, stages, boundaries } from './data/architecture.js';
 import HavenLab from './components/HavenLab.jsx';
+import HavenStudy from './components/HavenStudy.jsx';
 
 const repo = 'https://github.com/MichaelWave369/CompAware';
 const docs = (name) => repo + '/blob/main/docs/' + name + '.md';
@@ -71,6 +72,7 @@ function App() {
             <a href="#mission" onClick={() => setMenuOpen(false)}>Mission</a>
             <a href="#architecture" onClick={() => setMenuOpen(false)}>Architecture</a>
             <a href="#haven" onClick={() => setMenuOpen(false)}>Haven Lab</a>
+            <a href="#comparison" onClick={() => setMenuOpen(false)}>Comparison</a>
             <a href="#method" onClick={() => setMenuOpen(false)}>Method</a>
             <a href="#origins" onClick={() => setMenuOpen(false)}>Origins</a>
           </nav>
@@ -174,8 +176,18 @@ function App() {
           </div>
         </section>
 
+        <section id="comparison" className="page-width section-pad methods-section">
+          <SectionLabel number="05">CA-HAVEN / COMPARATIVE STUDY R2</SectionLabel>
+          <div className="section-heading">
+            <h2>Test the model.<br/><em>Challenge the advantage.</em></h2>
+            <p>A functional comparison with matched observations and an intentionally trivial baseline. Generate repeatable trial data; don't infer awareness from it.</p>
+          </div>
+          <HavenStudy/>
+          <a className="text-link" href={docs('RUNG_2_PROTOCOL')} target="_blank" rel="noreferrer">Read the complete comparison protocol <ArrowRight size={17}/></a>
+        </section>
+
         <section id="method" className="page-width section-pad methods-section">
-          <SectionLabel number="05">RESEARCH METHOD</SectionLabel>
+          <SectionLabel number="06">RESEARCH METHOD</SectionLabel>
           <div className="section-heading">
             <h2>No verdict first.<br/><em>Evidence first.</em></h2>
             <p>Hypotheses, negative controls, preregistered predictions, and independent replication before strong claims.</p>
@@ -188,7 +200,7 @@ function App() {
 
         <section className="origin-section" id="origins">
           <div className="page-width origin-grid">
-            <div><SectionLabel number="06">WHERE IT BEGAN</SectionLabel><h2>First, a dream.<br/><em>Then, a question.</em></h2></div>
+            <div><SectionLabel number="07">WHERE IT BEGAN</SectionLabel><h2>First, a dream.<br/><em>Then, a question.</em></h2></div>
             <div className="origin-copy">
               <p>The starting image was a dream: a street, an announcement on a television, and beautiful artificial beings with intricate fiber-like hair and delicate surface strands. Humans and computational beings shared a peaceful public moment.</p>
               <p>The phrase announced was <strong>“Computational Awareness.”</strong> That moment inspired a research question, not an empirical conclusion.</p>
