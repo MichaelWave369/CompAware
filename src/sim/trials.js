@@ -63,7 +63,7 @@ function summarize(metric) {
 export function runSensorStudy({ seed = 369, replicates = 8, steps = 24, observeEvery = 3 } = {}) {
   validateInteger('seed', seed, 1, 999999);
   validateInteger('replicates', replicates, 1, 40);
-  validateInteger('steps', steps, 6, 60);
+  validateInteger('steps', steps, 6, 40);
   validateInteger('observeEvery', observeEvery, 1, 10);
 
   const globalMetrics = CONTROLLERS.map(emptyMetric);
