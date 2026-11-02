@@ -20,6 +20,7 @@
 - [Rung 1](docs/RUNG_1.md): deliverables, acceptance criteria and next experiments.
 - [Rung 2 protocol](docs/RUNG_2_PROTOCOL.md): controlled state-tracking comparisons and explicit limits.
 - [Silicon Cosmology Atlas CA-SC-01](docs/SILICON_COSMOLOGY.md): philosophical inspiration separated from testable substrate, environmental and self-model questions.
+- [Epistemic Horizons CA-SC-02](docs/EPISTEMIC_HORIZONS.md): six-stage observation contract, critical Rung 3 assumptions and falsifiable challenge cases for the engineering lane.
 - [Rung 3 protocol](docs/RUNG_3_PROTOCOL.md): noisy-observation decisions, costs, fixed baselines and reproducible exploratory results.
 - [Collaboration handoff](docs/COLLABORATION.md): alternating philosophy and engineering PR workflow.
 - [Research protocol](docs/RESEARCH_PROTOCOL.md): falsifiable experiments, controls, and limitations.

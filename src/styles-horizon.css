@@ -1,0 +1,30 @@
+/* CA-SC-02: interpretive epistemic-boundary atlas. Not an instrument readout. */
+.horizon-panel{margin-top:36px;border:1px solid #354c64;background:linear-gradient(145deg,#142537,#101c2c);border-radius:10px;padding:27px}
+.horizon-kicker{display:flex;align-items:center;gap:10px;font:10px 'DM Mono',monospace;letter-spacing:.09em;color:#90e1d0}
+.horizon-kicker span{margin-left:auto;color:#9aadc2;font-size:9px}
+.horizon-panel>h3{font:500 clamp(26px,3.3vw,39px) 'Space Grotesk',sans-serif;letter-spacing:-.045em;margin:20px 0 14px}
+.horizon-panel>h3 em{font-style:normal;color:#a6c5f8}
+.horizon-lead{font-size:13px;line-height:1.85;max-width:850px;color:#a8bece}
+.horizon-stages{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin-top:27px}
+.horizon-stage{min-height:68px;display:flex;flex-direction:column;justify-content:center;text-align:left;gap:8px;padding:11px;border:1px solid #2a4357;background:#0e1b2a;color:#c5d8e9;border-radius:6px;font:500 11px 'Space Grotesk',sans-serif}
+.horizon-stage>span{color:#7bc8c7;font:10px 'DM Mono',monospace}
+.horizon-stage:hover{border-color:#80b3b9}.horizon-stage.selected{border-color:#83dcc7;background:#18313b;box-shadow:inset 0 3px #7fdbc6}
+.horizon-stage-details{display:grid;grid-template-columns:190px 1fr;gap:20px;align-items:center;padding:21px;background:#1b2d3f;border:1px solid #39556a;border-radius:7px;margin-top:10px}
+.horizon-stage-details>div{display:flex;flex-direction:column;gap:7px}.horizon-stage-details>div span{font:9px 'DM Mono',monospace;color:#86d8cd;letter-spacing:.06em}
+.horizon-stage-details strong{font:500 18px 'Space Grotesk',sans-serif;color:#e6f0fa}
+.horizon-stage-details p{font-size:12px;line-height:1.8;color:#b2c5d6;margin:0}
+.horizon-challenges-head{display:flex;justify-content:space-between;gap:20px;align-items:center;margin:35px 0 14px}
+.horizon-challenges-head strong{font-size:15px;color:#e0eef7}.horizon-challenges-head span{font:9px 'DM Mono',monospace;color:#9bb9be}
+.horizon-challenge-grid{display:grid;grid-template-columns:minmax(170px,.7fr) minmax(0,1.3fr);gap:10px}
+.horizon-challenge-menu{display:flex;flex-direction:column;gap:7px}
+.horizon-challenge{display:flex;justify-content:space-between;align-items:center;text-align:left;gap:8px;border:1px solid #294559;background:#0e1b2a;color:#b8d0df;border-radius:5px;padding:15px 13px;font-size:12px}
+.horizon-challenge:hover{border-color:#7cb8b4}.horizon-challenge.selected{border-color:#8bd8c9;background:#1a3541;color:#e7faf5}
+.horizon-challenge-detail{padding:22px;border:1px solid #314d62;border-radius:6px;background:#0c1b2a;min-width:0}
+.horizon-detail-meta{font:9px 'DM Mono',monospace;color:#91decd;letter-spacing:.06em}
+.horizon-challenge-detail h4{font:500 21px 'Space Grotesk',sans-serif;margin:14px 0 20px}
+.horizon-challenge-detail dl{display:grid;grid-template-columns:145px 1fr;gap:12px 15px;margin:0}
+.horizon-challenge-detail dt{font-size:10px;font-weight:700;color:#8fd8ca}
+.horizon-challenge-detail dd{font-size:12px;line-height:1.65;color:#a6b9c9;margin:0}
+.horizon-disclaimer{font:10px/1.8 'DM Mono',monospace;color:#a4b6c8;margin:22px 0 0;padding-left:13px;border-left:2px solid #8fb9d7}
+@media(max-width:900px){.horizon-stages{grid-template-columns:repeat(3,minmax(0,1fr))}.horizon-stage-details{grid-template-columns:1fr}.horizon-challenge-detail dl{grid-template-columns:1fr;gap:4px}.horizon-challenge-detail dd{margin-bottom:11px}}
+@media(max-width:620px){.horizon-panel{padding:17px}.horizon-kicker{flex-wrap:wrap}.horizon-kicker span{margin-left:0}.horizon-stages{grid-template-columns:repeat(2,minmax(0,1fr))}.horizon-challenge-grid{grid-template-columns:1fr}.horizon-challenge-menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.horizon-challenge{padding:12px;min-height:55px}.horizon-challenges-head{align-items:start;flex-direction:column;gap:7px}}
