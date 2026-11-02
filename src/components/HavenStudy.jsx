@@ -51,7 +51,7 @@ export default function HavenStudy() {
     <div className="study-controls">
       <label>SEED<input type="number" min="1" max="999999" step="1" value={seed} onChange={e => setSeed(e.target.value)} /></label>
       <label>TRIALS PER SCENARIO<input type="number" min="1" max="40" step="1" value={replicates} onChange={e => setReplicates(e.target.value)} /></label>
-      <label>TICKS PER TRIAL<input type="number" min="6" max="60" step="1" value={steps} onChange={e => setSteps(e.target.value)} /></label>
+      <label>TICKS PER TRIAL<input type="number" min="6" max="40" step="1" value={steps} onChange={e => setSteps(e.target.value)} /></label>
       <label>OBSERVE EVERY N TICKS<input type="number" min="1" max="10" step="1" value={observeEvery} onChange={e => setObserveEvery(e.target.value)} /></label>
       <button type="button" onClick={run}><Play size={16}/> Run comparison</button>
     </div>
