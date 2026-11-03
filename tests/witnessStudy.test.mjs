@@ -16,7 +16,13 @@ test('both unanchored worlds have identical reports but potentially different tr
   assert.ok(a.some((x,i)=>x.hiddenTruthForScorer!==b[i].hiddenTruthForScorer));
   for(let i=0;i<a.length;i++){
     for(const p of POLICIES){
-      assert.deepEqual(a[i].decisions[p.id],b[i].decisions[p.id]);
+      const left = a[i].decisions[p.id], right = b[i].decisions[p.id];
+      // The same evidence produces the same predictions and actions.
+      // Realized utility is intentionally scored against different hidden truth.
+      assert.deepEqual(
+        [left.action, left.purchasedB, left.sawB, left.estimatedFault],
+        [right.action, right.purchasedB, right.sawB, right.estimatedFault]
+      );
     }
   }
 });
@@ -34,7 +40,10 @@ test('every policy pays for requested witness and never sees unbought B',()=>{
     for(const p of POLICIES){
       const d=row.decisions[p.id];
       assert.equal(d.sawB,d.purchasedB?row.referenceB:null);
-      if(!d.purchasedB)assert.notEqual(d.utility,REWARDS.witnessCost-1000);
+      const score = (d.action === 'continue'
+        ? (row.hiddenTruthForScorer ? REWARDS.faultyContinue : REWARDS.healthyContinue)
+        : REWARDS.fallback) + (d.purchasedB ? REWARDS.witnessCost : 0);
+      assert.equal(d.utility, score);
     }
   }
   for(const m of r.metrics){
