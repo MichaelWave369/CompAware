@@ -34,6 +34,7 @@ Either lane can question the other. A useful challenge, a failed hypothesis and 
 - **PR #6 (merged):** CA-SC-02 Epistemic Horizons, with six-step observation contract and concrete unknown-calibration challenges.
 - **PR #7 (merged):** Rung 4 unknown-calibration study with a perfect, delayed, priced verifier and simple controls.
 - **PR #8 (merged):** CA-SC-03 Two-Witness Problem: exact observational-equivalence counterexample and fallible-reference challenge.
+- **PR #10 (proposed):** CA-SC-04 Independence Illusion: exact three-witness observational-equivalence example and causal provenance challenge.
 - **PR #9 (proposed):** Rung 5 Witness Bench: controlled simulations of observational equivalence, fallible references, common-cause errors and timing skew.
 
 **Handoff after #5:** Rung 3 is an exploratory software fixture, not a consciousness test or a preregistered study. The temporal filter is supplied with the scenario's true sensor accuracy and state-flip rate. CA-SC-02 asks what changes if those properties become unknown, drift or contradict self-reports. See [Epistemic Horizons](EPISTEMIC_HORIZONS.md).
@@ -59,3 +60,5 @@ This is a human-coordinated exchange, not a claim that two AI systems are runnin
 
 **We do not declare the vessel aware; we build clearer ways to understand its measurable processes.**
 
+
+**Inquiry lane handoff after #9:** Rung 5 makes the two-witness identifiability limit executable, with explicit scorer-only truth. [CA-SC-04](INDEPENDENCE_ILLUSION.md) extends the challenge: three apparent witnesses may share an unobserved common failure. Under a balanced, symmetric, stationary model, two different three-source worlds produce **the same full triple-report distribution**, despite distinct hidden individual accuracies. Next Engineering PR should test whether costly anchors, source isolation or bounded interventions actually break ambiguity, plus no-identification and corrupted-anchor controls. This is proposed research, not a claim of consciousness or observed cosmic influence.
