@@ -44,6 +44,9 @@ export const RULES=Object.freeze({
   declareThreshold:.85,
   anchorEvery:4,
 });
+// Precompute the analytical matched reliability once per loaded module.
+// Rebuilding eight probability rows for every likelihood call is unnecessary.
+const MATCHED_INDEPENDENT_ACCURACY = threeWitnessWorlds().matchedIndependentAccuracy;
 function int(name,v,min,max) {
   if(!Number.isSafeInteger(v)||v<min||v>max) throw Error(name+' must be an integer '+min+'..'+max);
 }
@@ -57,7 +60,7 @@ function stream(seed,scenario,repeat,world,tag) {
     Math.imul(tag+1,1274126177))>>>0);
 }
 function modelJoint(world, pattern, truth, afterIsolation) {
-  const p=threeWitnessWorlds().matchedIndependentAccuracy;
+  const p=MATCHED_INDEPENDENT_ACCURACY;
   const r=RULES.baseReliability;
   const q=world==='common'?(afterIsolation?0:RULES.commonFailureRate):0;
   const accuracy=world==='independent'?p:r;
@@ -244,7 +247,7 @@ export function runCausalStudy({seed=369,repetitions=4,steps=48}={}) {
       hiddenBalancedBinaryTruth:true,symmetricStationaryErrors:true,
       commonFailureRate:RULES.commonFailureRate,
       baseReliability:RULES.baseReliability,
-      matchedIndependentAccuracy:threeWitnessWorlds().matchedIndependentAccuracy,
+      matchedIndependentAccuracy:MATCHED_INDEPENDENT_ACCURACY,
       interventionEffect:'In effective-isolation conditions only, common-world shared failure is eliminated after midpoint.',
       anchorTrust:'Policies assume 98% independent anchor even when the simulator corrupts or copies it.',
       criterion:'World declaration at posterior >=85% or <=15%; otherwise unresolved.',
