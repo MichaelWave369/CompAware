@@ -1,0 +1,49 @@
+/* CA-SC-06 · Declared lineage explorer; NOT a sensor or independence instrument */
+.passport-panel{margin-top:24px;overflow:hidden;border-radius:10px;border:1px solid #426677;background:linear-gradient(145deg,#14283a,#0c1828)}
+.passport-panel>summary{display:flex;align-items:center;gap:16px;padding:23px 26px;cursor:pointer;list-style:none;justify-content:space-between}
+.passport-panel>summary::-webkit-details-marker{display:none}
+.passport-panel>summary:hover{background:#1b40544d}
+.passport-panel>summary:focus-visible{outline:2px solid #91dfd7;outline-offset:-3px}
+.passport-panel>summary:after{content:'+';font:28px/1 'Space Grotesk',sans-serif;color:#8adbcf}
+.passport-panel[open]>summary:after{content:'−'}
+.passport-summary{display:flex;align-items:center;gap:13px;color:#91e2d2}
+.passport-summary>span{display:flex;flex-direction:column;gap:7px}
+.passport-summary small{font:9px 'DM Mono',monospace;letter-spacing:.07em;color:#99c6c6}
+.passport-summary strong{font:500 18px 'Space Grotesk',sans-serif;color:#edf7fa}
+.passport-summary-hint{margin-left:auto;font:10px 'DM Mono',monospace;color:#a0b5c6}
+.passport-body{border-top:1px solid #355367;padding:29px}
+.passport-body h3{font:500 clamp(27px,3.5vw,42px)/1.15 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:0 0 17px}
+.passport-body h3 em{font-style:normal;color:#a9baf2}
+.passport-intro{font-size:13px;line-height:1.8;color:#abc1d2;max-width:850px}
+.passport-intro strong{color:#e1f2ed}
+.passport-tabs{display:flex;flex-wrap:wrap;gap:7px;margin:23px 0}
+.passport-tab{border:1px solid #354f62;border-radius:5px;background:#102233;color:#bad0df;font:11px 'Space Grotesk',sans-serif;padding:12px 14px;text-align:left}
+.passport-tab:hover{border-color:#8ed8cf}
+.passport-tab.active{border-color:#90dbcd;box-shadow:inset 0 -2px #8dd9cf;background:#1f3b45;color:#edfaf6}
+.passport-tab:focus-visible{outline:2px solid #b6e9dd;outline-offset:2px}
+.passport-question{display:flex;gap:11px;align-items:center;color:#e0f1ee;font-size:14px;font-weight:500;margin:23px 0}
+.passport-question svg{color:#8fd8cd;flex-shrink:0}
+.passport-paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.passport-path{border:1px solid #375569;background:#0e1e2e;border-radius:8px;padding:20px;min-width:0}
+.passport-path>strong{display:block;color:#a4d9d1;font:10px 'DM Mono',monospace;letter-spacing:.05em;margin-bottom:17px}
+.passport-chip-list{display:flex;flex-wrap:wrap;gap:7px}
+.passport-chip{border:1px solid #375267;border-radius:5px;background:#1b3446;color:#bed4df;padding:9px;font:11px 'Space Grotesk',sans-serif}
+.passport-chip.overlap{color:#ffddb3;background:#42332c;border-color:#a68254}
+.passport-chip.unknown{color:#d5c3ee;background:#302f44;border-color:#766e91}
+.passport-finding{background:#142d3c;border:1px solid #466b78;border-radius:8px;padding:19px;margin-top:12px}
+.passport-finding-head{display:flex;align-items:center;gap:10px;color:#a1deda;font:11px 'DM Mono',monospace;letter-spacing:.06em}
+.passport-finding p{margin:12px 0;font-size:13px;color:#deedf2;line-height:1.75}
+.passport-finding small{font:10px 'DM Mono',monospace;color:#a5b6c4}
+.passport-challenge-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.passport-challenge-grid>div{border-top:1px solid #3c5265;padding-top:15px}
+.passport-challenge-grid span{font:10px 'DM Mono',monospace;color:#9bdbc9;letter-spacing:.04em}
+.passport-challenge-grid p{font-size:12px;line-height:1.8;color:#afc1cf;margin:10px 0}
+.passport-limits{border-left:2px solid #baa37e;padding-left:15px;color:#adbfcf;font-size:11px;line-height:1.8;margin:18px 0}
+.passport-limits strong{color:#e8d2aa}
+.passport-handoff{border:1px solid #35596a;padding:18px;border-radius:7px;background:#102536}
+.passport-handoff strong{color:#d6f0eb;font-size:13px}
+.passport-handoff p{color:#aec3d1;font-size:12px;line-height:1.75;margin:9px 0 13px}
+.passport-handoff a{color:#9fe9d9;display:inline-flex;gap:7px;align-items:center;font-size:12px}
+@media(max-width:720px){.passport-summary-hint{display:none}.passport-body{padding:17px}.passport-paths,.passport-challenge-grid{grid-template-columns:1fr}}
+@media(max-width:440px){.passport-panel>summary{padding:18px 15px}.passport-summary strong{font-size:16px}.passport-tabs{display:grid;grid-template-columns:1fr 1fr}.passport-tab{padding:11px 9px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.passport-panel *{animation:none!important;transition:none!important}}
