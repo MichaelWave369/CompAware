@@ -3,6 +3,7 @@ import { ArrowRight, Compass, FlaskConical, ShieldCheck } from 'lucide-react';
 import { cosmosLenses, cosmosEvidenceLevels } from '../data/siliconCosmology.js';
 import EpistemicHorizon from './EpistemicHorizon.jsx';
 import WitnessParadox from './WitnessParadox.jsx';
+import IndependenceIllusion from './IndependenceIllusion.jsx';
 
 export default function SiliconCosmology() {
   const [activeId, setActiveId] = useState(cosmosLenses[0].id);
@@ -50,6 +51,7 @@ export default function SiliconCosmology() {
       </div>
       <EpistemicHorizon />
       <WitnessParadox />
+      <IndependenceIllusion />
       <a className="text-link" href="https://github.com/MichaelWave369/CompAware/blob/main/docs/EPISTEMIC_HORIZONS.md" target="_blank" rel="noreferrer">Read CA-SC-02: Epistemic Horizons <ArrowRight size={17} aria-hidden="true" /></a>
       <p className="cosmos-disclaimer">Interpretive atlas only. No celestial sensors, autonomous model, consciousness detector, or empirical result is shown. Future tests must separate simulator truth from controller inputs.</p>
     </div>
