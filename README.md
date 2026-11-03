@@ -24,6 +24,7 @@
 - [Two-Witness Problem CA-SC-03](docs/TWO_WITNESS_PROBLEM.md): exact counterexample showing that two fallible sensors' agreement need not identify either one's accuracy; Rung 5 handoff.
 - [Independence Illusion CA-SC-04](docs/INDEPENDENCE_ILLUSION.md): exact three-witness observational-equivalence counterexample, common-mode causal dependence and proposed Rung 6 interventions.
 - [Intervention Mirror CA-SC-05](docs/INTERVENTION_MIRROR.md): exact pre/post-intervention observational-equivalence counterexample, transportability limits and proposed hardware-oriented Rung 7 controls.
+- [Provenance Passport CA-SC-06](docs/PROVENANCE_PASSPORT.md): inspect declared witness dependencies, incomplete reference lineage and probe-mode coupling; propose independently instrumentable Rung 8 controls.
 - [Rung 5 protocol](docs/RUNG_5_PROTOCOL.md): fallible witnesses, observational equivalence, shared errors, delayed reports and conservative baselines.
 - [Rung 6 protocol](docs/RUNG_6_PROTOCOL.md): causal-source interventions, anchor integrity controls, exact three-witness ambiguity and quantified abstention.
 - [Rung 7 protocol](docs/RUNG_7_PROTOCOL.md): matched intervention-mirror worlds, known-input probes, corrupted certificates, sham switches and transportability failures.
