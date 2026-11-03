@@ -1,0 +1,52 @@
+/* CA-SC-04 · Collapsible interpretive atlas. NOT an instrument dashboard. */
+.independence-expander{border:1px solid #416579;background:linear-gradient(145deg,#152a3b,#0b1828);border-radius:11px;margin-top:30px;overflow:hidden}
+.independence-expander>summary{cursor:pointer;padding:24px 25px;display:flex;justify-content:space-between;align-items:center;gap:18px;list-style:none}
+.independence-expander>summary::-webkit-details-marker{display:none}
+.independence-expander>summary:hover{background:#23445955}
+.independence-expander>summary:focus-visible{outline:2px solid #8de0d0;outline-offset:-3px}
+.independence-expander>summary:after{content:'+';color:#9cddd7;font:28px/1 'Space Grotesk',sans-serif}
+.independence-expander[open]>summary:after{content:'−'}
+.independence-summary-name{display:flex;gap:14px;align-items:center;color:#8edcd1}
+.independence-summary-name>span{display:flex;flex-direction:column;gap:7px}
+.independence-summary-name small{font:9px 'DM Mono',monospace;letter-spacing:.08em;color:#99c9c8}
+.independence-summary-name strong{font:500 18px 'Space Grotesk',sans-serif;color:#f1f8fa}
+.independence-summary-hint{font:10px 'DM Mono',monospace;color:#9cb5c7;margin-left:auto}
+.independence-body{border-top:1px solid #2c4b61;padding:29px}
+.independence-body h3{font:500 clamp(29px,3.3vw,43px)/1.12 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:0 0 18px}
+.independence-body h3 em{color:#9fb9ef;font-style:normal}
+.independence-intro{font-size:14px;line-height:1.8;color:#a9c0d1;max-width:900px}
+.independence-intro strong{color:#dceeea}
+.independence-settings{border:1px solid #314a5f;background:#111f2f;border-radius:8px;padding:18px 22px;margin:24px 0}
+.independence-settings label{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#b8d0db;align-items:center}
+.independence-settings label strong{color:#b5eade;font:600 17px 'Space Grotesk',sans-serif}
+.independence-settings input[type=range]{width:100%;accent-color:#8ddcc8;cursor:pointer;margin:16px 0}
+.independence-range-labels{display:flex;justify-content:space-between;gap:14px;font:10px 'DM Mono',monospace;color:#91a9b9}
+.independence-world-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.independence-world{padding:23px;border:1px solid #375266;background:#0d1d2e;border-radius:8px}
+.independence-world-shared{background:#1d293d;border-color:#646488}
+.independence-tag{font:10px 'DM Mono',monospace;letter-spacing:.07em;color:#89d5cb}
+.independence-world h4{font:500 18px 'Space Grotesk',sans-serif;margin:14px 0}
+.independence-value{font:500 39px 'Space Grotesk',sans-serif;color:#acefe0}
+.independence-world-shared .independence-value{color:#d1c4fa}
+.independence-world p{font-size:12px;line-height:1.75;color:#aabdcf;margin:10px 0 0}
+.independence-contrast{display:flex;gap:13px;padding:18px;border:1px solid #5a667e;background:#1e3342;border-radius:8px;margin-top:12px}
+.independence-contrast>svg{color:#aedcd0;flex-shrink:0}
+.independence-contrast strong{font-size:14px;color:#e4f6f0}
+.independence-contrast p{font-size:12px;color:#b1c4d3;line-height:1.75;margin:8px 0 0}
+.independence-report-heading{display:flex;align-items:center;gap:10px;margin:29px 0 13px}
+.independence-report-heading svg{color:#9cdecf;flex-shrink:0}
+.independence-report-heading strong{font-size:13px}
+.independence-report-heading span{font:9px 'DM Mono',monospace;color:#91abba;margin-left:auto}
+.independence-matrix{border:1px solid #334e62;background:#101e2e;border-radius:8px;overflow:hidden}
+.independence-matrix-header,.independence-matrix-row{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:10px;align-items:center;padding:11px 16px}
+.independence-matrix-header{font:10px 'DM Mono',monospace;color:#90b6bc;background:#1b2c3f}
+.independence-matrix-row{border-top:1px solid #283f51;color:#cfdfeb;font:12px 'DM Mono',monospace}
+.independence-pattern{color:#a5e5d6;font-weight:500}
+.independence-warning{margin:21px 0;padding-left:15px;border-left:2px solid #a0d4cd;color:#aac2cc;line-height:1.75;font-size:12px}
+.independence-warning strong{color:#e4f3f0}
+.independence-next{border:1px solid #35596c;border-radius:8px;padding:20px;background:#122738}
+.independence-next strong{font-size:14px;color:#dff4f3}
+.independence-next p{font-size:12px;line-height:1.8;color:#abc4d1;margin:10px 0 15px}
+.independence-next a{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:#98e6d7}
+@media(max-width:670px){.independence-expander>summary{padding:19px 15px}.independence-summary-hint{display:none}.independence-summary-name strong{font-size:16px}.independence-body{padding:18px 13px}.independence-world-grid{grid-template-columns:1fr}.independence-world{padding:18px}.independence-report-heading{flex-wrap:wrap}.independence-report-heading span{margin-left:0}.independence-matrix-header,.independence-matrix-row{gap:7px;padding:10px 9px;font-size:10px}}
+@media(prefers-reduced-motion:reduce){.independence-expander *{animation:none!important;transition:none!important}}
