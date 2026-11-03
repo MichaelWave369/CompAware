@@ -9,6 +9,7 @@ import './styles-horizon.css';
 import './styles-witness.css';
 import './styles-r3.css';
 import './styles-r4.css';
+import './styles-r5.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>

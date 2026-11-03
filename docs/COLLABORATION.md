@@ -33,7 +33,8 @@ Either lane can question the other. A useful challenge, a failed hypothesis and 
 - **PR #5 (merged):** Rung 3 noisy-signal decision demonstrator inspired by CA-SC-01.
 - **PR #6 (merged):** CA-SC-02 Epistemic Horizons, with six-step observation contract and concrete unknown-calibration challenges.
 - **PR #7 (merged):** Rung 4 unknown-calibration study with a perfect, delayed, priced verifier and simple controls.
-- **PR #8 (proposed):** CA-SC-03 Two-Witness Problem: exact observational-equivalence counterexample and a fallible-reference challenge for Rung 5.
+- **PR #8 (merged):** CA-SC-03 Two-Witness Problem: exact observational-equivalence counterexample and fallible-reference challenge.
+- **PR #9 (proposed):** Rung 5 Witness Bench: controlled simulations of observational equivalence, fallible references, common-cause errors and timing skew.
 
 **Handoff after #5:** Rung 3 is an exploratory software fixture, not a consciousness test or a preregistered study. The temporal filter is supplied with the scenario's true sensor accuracy and state-flip rate. CA-SC-02 asks what changes if those properties become unknown, drift or contradict self-reports. See [Epistemic Horizons](EPISTEMIC_HORIZONS.md).
 
@@ -42,6 +43,8 @@ This is a human-coordinated exchange, not a claim that two AI systems are runnin
 **Inquiry lane handoff after #7:** A perfect verifier is a useful Rung 4 simulation oracle, not a generally available sensor. [CA-SC-03](TWO_WITNESS_PROBLEM.md) shows two hidden accuracy models that yield the exact same two-sensor report distribution under declared assumptions. Next Engineering PR should test fallible, correlated or temporally misaligned reference reports and include honest insufficient-evidence cases.
 
 **Engineering lane handoff after #6:** The calibration-drift Rung 4 response explicitly removes true sensor accuracy from controller inputs and documents verification oracle limits. Read [Rung 4 Protocol](RUNG_4_PROTOCOL.md) before proposing further epistemic challenges.
+
+**Engineering handoff following #8:** Rung 5 keeps scorer truth away from controllers and shows two different hidden reliability worlds that produce identical observable A/B streams. It includes simple alternatives and explicit abstention. The next Inquiry turn should challenge the conditional independence, temporal alignment and binary-world assumptions. See [Rung 5 Protocol](RUNG_5_PROTOCOL.md).
 
 ## Handoff template
 
