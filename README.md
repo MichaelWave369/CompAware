@@ -28,6 +28,7 @@
 - [Rung 5 protocol](docs/RUNG_5_PROTOCOL.md): fallible witnesses, observational equivalence, shared errors, delayed reports and conservative baselines.
 - [Rung 6 protocol](docs/RUNG_6_PROTOCOL.md): causal-source interventions, anchor integrity controls, exact three-witness ambiguity and quantified abstention.
 - [Rung 7 protocol](docs/RUNG_7_PROTOCOL.md): matched intervention-mirror worlds, known-input probes, corrupted certificates, sham switches and transportability failures.
+- [Rung 8 protocol](docs/RUNG_8_PROTOCOL.md): declared source graphs, copied data, hidden shared faults, probe-mode hysteresis and audit receipts.
 - [Rung 4 protocol](docs/RUNG_4_PROTOCOL.md): unknown calibration, delayed independent checks, held-out seed partitions and simple controls.
 - [Rung 3 protocol](docs/RUNG_3_PROTOCOL.md): noisy-observation decisions, costs, fixed baselines and reproducible exploratory results.
 - [Collaboration handoff](docs/COLLABORATION.md): alternating philosophy and engineering PR workflow.
@@ -69,3 +70,5 @@ The project name arose from a dream of computational beings being peacefully rec
 
 MIT licensed. Copyright © 2026 Michael Hughes.
 
+
+**Rung 8 Lineage Lab:** Seven synthetic source-dependency regimes and six simple inspection policies compare declared wiring against simulated shared faults, copied references and probe-mode hysteresis. Full local JSON receipts and tests make every assumption visible. Nothing here certifies physical independence.

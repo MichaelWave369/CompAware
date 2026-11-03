@@ -13,6 +13,7 @@ import CalibrationLab from './components/CalibrationLab.jsx';
 import FallibleWitnessLab from './components/FallibleWitnessLab.jsx';
 import CausalProvenanceLab from './components/CausalProvenanceLab.jsx';
 import TransportabilityLab from './components/TransportabilityLab.jsx';
+import LineageLab from './components/LineageLab.jsx';
 
 const repo = 'https://github.com/MichaelWave369/CompAware';
 const docs = (name) => repo + '/blob/main/docs/' + name + '.md';
@@ -83,6 +84,7 @@ function App() {
             <a href="#noisy-lab" onClick={() => setMenuOpen(false)}>Noisy Lab</a>
             <a href="#witness-bench" onClick={() => setMenuOpen(false)}>Witness Bench</a>
             <a href="#transportability" onClick={() => setMenuOpen(false)}>Transport</a>
+            <a href="#lineage" onClick={() => setMenuOpen(false)}>Lineage</a>
             <a href="#method" onClick={() => setMenuOpen(false)}>Method</a>
             <a href="#origins" onClick={() => setMenuOpen(false)}>Origins</a>
           </nav>
@@ -239,6 +241,11 @@ function App() {
               <div className="section-label"><span>R7</span><span className="line" /> CA-HAVEN / INTERVENTION TRANSPORTABILITY</div>
             </div>
             <TransportabilityLab />
+            <div id="lineage" className="cal-section-head">
+              <div className="section-label"><span>R8</span><span className="line" /> CA-HAVEN / SOURCE LINEAGE & HYSTERESIS</div>
+            </div>
+            <LineageLab />
+            <a className="text-link" href={docs('RUNG_8_PROTOCOL')} target="_blank" rel="noreferrer">Read Rung 8 source-lineage protocol <ArrowRight size={17}/></a>
             <a className="text-link" href={docs('RUNG_7_PROTOCOL')} target="_blank" rel="noreferrer">Read Rung 7 intervention-transport protocol <ArrowRight size={17}/></a>
             <a className="text-link" href={docs('RUNG_6_PROTOCOL')} target="_blank" rel="noreferrer">Read Rung 6 causal-provenance protocol <ArrowRight size={17}/></a>
             <a className="text-link" href={docs('RUNG_5_PROTOCOL')} target="_blank" rel="noreferrer">Read the fallible-witness research protocol <ArrowRight size={17}/></a>
