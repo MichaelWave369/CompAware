@@ -23,6 +23,7 @@
 - [Epistemic Horizons CA-SC-02](docs/EPISTEMIC_HORIZONS.md): six-stage observation contract, critical Rung 3 assumptions and falsifiable challenge cases for the engineering lane.
 - [Two-Witness Problem CA-SC-03](docs/TWO_WITNESS_PROBLEM.md): exact counterexample showing that two fallible sensors' agreement need not identify either one's accuracy; Rung 5 handoff.
 - [Independence Illusion CA-SC-04](docs/INDEPENDENCE_ILLUSION.md): exact three-witness observational-equivalence counterexample, common-mode causal dependence and proposed Rung 6 interventions.
+- [Intervention Mirror CA-SC-05](docs/INTERVENTION_MIRROR.md): exact pre/post-intervention observational-equivalence counterexample, transportability limits and proposed hardware-oriented Rung 7 controls.
 - [Rung 5 protocol](docs/RUNG_5_PROTOCOL.md): fallible witnesses, observational equivalence, shared errors, delayed reports and conservative baselines.
 - [Rung 6 protocol](docs/RUNG_6_PROTOCOL.md): causal-source interventions, anchor integrity controls, exact three-witness ambiguity and quantified abstention.
 - [Rung 4 protocol](docs/RUNG_4_PROTOCOL.md): unknown calibration, delayed independent checks, held-out seed partitions and simple controls.
