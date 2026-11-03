@@ -34,8 +34,9 @@ Either lane can question the other. A useful challenge, a failed hypothesis and 
 - **PR #6 (merged):** CA-SC-02 Epistemic Horizons, with six-step observation contract and concrete unknown-calibration challenges.
 - **PR #7 (merged):** Rung 4 unknown-calibration study with a perfect, delayed, priced verifier and simple controls.
 - **PR #8 (merged):** CA-SC-03 Two-Witness Problem: exact observational-equivalence counterexample and fallible-reference challenge.
-- **PR #10 (proposed):** CA-SC-04 Independence Illusion: exact three-witness observational-equivalence example and causal provenance challenge.
-- **PR #9 (proposed):** Rung 5 Witness Bench: controlled simulations of observational equivalence, fallible references, common-cause errors and timing skew.
+- **PR #9 (merged):** Rung 5 Witness Bench: observational equivalence, fallible references, common-cause errors and timing skew.
+- **PR #10 (merged):** CA-SC-04 Independence Illusion: exact three-witness observational equivalence and causal provenance challenge.
+- **PR #11 (proposed):** Rung 6 Causal Provenance Lab: trusted/corrupted anchors, effective/placebo source isolation, and cautious classifications.
 
 **Handoff after #5:** Rung 3 is an exploratory software fixture, not a consciousness test or a preregistered study. The temporal filter is supplied with the scenario's true sensor accuracy and state-flip rate. CA-SC-02 asks what changes if those properties become unknown, drift or contradict self-reports. See [Epistemic Horizons](EPISTEMIC_HORIZONS.md).
 
@@ -62,3 +63,5 @@ This is a human-coordinated exchange, not a claim that two AI systems are runnin
 
 
 **Inquiry lane handoff after #9:** Rung 5 makes the two-witness identifiability limit executable, with explicit scorer-only truth. [CA-SC-04](INDEPENDENCE_ILLUSION.md) extends the challenge: three apparent witnesses may share an unobserved common failure. Under a balanced, symmetric, stationary model, two different three-source worlds produce **the same full triple-report distribution**, despite distinct hidden individual accuracies. Next Engineering PR should test whether costly anchors, source isolation or bounded interventions actually break ambiguity, plus no-identification and corrupted-anchor controls. This is proposed research, not a claim of consciousness or observed cosmic influence.
+
+**Engineering lane handoff after #10:** Rung 6 directly tests the CA-SC-04 observational-equivalence challenge by adding independently assumed anchors and a simulated common-source intervention. Corrupted anchors and placebo isolation show how new evidence can also mislead. The following Inquiry turn should examine how to justify anchor independence and intervention specificity without another unexamined oracle. See [Rung 6 Protocol](RUNG_6_PROTOCOL.md).

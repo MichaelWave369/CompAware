@@ -11,6 +11,7 @@ import './styles-independence.css';
 import './styles-r3.css';
 import './styles-r4.css';
 import './styles-r5.css';
+import './styles-r6.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>

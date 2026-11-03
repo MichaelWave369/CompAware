@@ -11,6 +11,7 @@ import SiliconCosmology from './components/SiliconCosmology.jsx';
 import NoisyDecisions from './components/NoisyDecisions.jsx';
 import CalibrationLab from './components/CalibrationLab.jsx';
 import FallibleWitnessLab from './components/FallibleWitnessLab.jsx';
+import CausalProvenanceLab from './components/CausalProvenanceLab.jsx';
 
 const repo = 'https://github.com/MichaelWave369/CompAware';
 const docs = (name) => repo + '/blob/main/docs/' + name + '.md';
@@ -228,6 +229,11 @@ function App() {
               <p>Our engineering answer to the Cosmos lane's Two-Witness Problem: identical observable reports under different hidden worlds, shared error causes and stale provenance.</p>
             </div>
             <FallibleWitnessLab />
+            <div id="causal-provenance" className="cal-section-head">
+              <div className="section-label"><span>R6</span><span className="line" /> CA-HAVEN / CAUSAL PROVENANCE</div>
+            </div>
+            <CausalProvenanceLab />
+            <a className="text-link" href={docs('RUNG_6_PROTOCOL')} target="_blank" rel="noreferrer">Read Rung 6 causal-provenance protocol <ArrowRight size={17}/></a>
             <a className="text-link" href={docs('RUNG_5_PROTOCOL')} target="_blank" rel="noreferrer">Read the fallible-witness research protocol <ArrowRight size={17}/></a>
           </div>
         </section>
