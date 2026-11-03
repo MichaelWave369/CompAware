@@ -12,6 +12,7 @@ import NoisyDecisions from './components/NoisyDecisions.jsx';
 import CalibrationLab from './components/CalibrationLab.jsx';
 import FallibleWitnessLab from './components/FallibleWitnessLab.jsx';
 import CausalProvenanceLab from './components/CausalProvenanceLab.jsx';
+import TransportabilityLab from './components/TransportabilityLab.jsx';
 
 const repo = 'https://github.com/MichaelWave369/CompAware';
 const docs = (name) => repo + '/blob/main/docs/' + name + '.md';
@@ -81,6 +82,7 @@ function App() {
             <a href="#cosmos" onClick={() => setMenuOpen(false)}>Cosmos</a>
             <a href="#noisy-lab" onClick={() => setMenuOpen(false)}>Noisy Lab</a>
             <a href="#witness-bench" onClick={() => setMenuOpen(false)}>Witness Bench</a>
+            <a href="#transportability" onClick={() => setMenuOpen(false)}>Transport</a>
             <a href="#method" onClick={() => setMenuOpen(false)}>Method</a>
             <a href="#origins" onClick={() => setMenuOpen(false)}>Origins</a>
           </nav>
@@ -233,6 +235,11 @@ function App() {
               <div className="section-label"><span>R6</span><span className="line" /> CA-HAVEN / CAUSAL PROVENANCE</div>
             </div>
             <CausalProvenanceLab />
+            <div id="transportability" className="cal-section-head">
+              <div className="section-label"><span>R7</span><span className="line" /> CA-HAVEN / INTERVENTION TRANSPORTABILITY</div>
+            </div>
+            <TransportabilityLab />
+            <a className="text-link" href={docs('RUNG_7_PROTOCOL')} target="_blank" rel="noreferrer">Read Rung 7 intervention-transport protocol <ArrowRight size={17}/></a>
             <a className="text-link" href={docs('RUNG_6_PROTOCOL')} target="_blank" rel="noreferrer">Read Rung 6 causal-provenance protocol <ArrowRight size={17}/></a>
             <a className="text-link" href={docs('RUNG_5_PROTOCOL')} target="_blank" rel="noreferrer">Read the fallible-witness research protocol <ArrowRight size={17}/></a>
           </div>
