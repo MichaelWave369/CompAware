@@ -68,6 +68,9 @@ function generate(regime,repeat,steps,seed,scenarioIndex){
       scorerCause='injected-common-mode';
     }
     if(regime.id==='copied-feed'){
+      // Include an explicit non-destructive tagged error so the copy control
+      // remains testable even with a short seeded observation window.
+      if(tick%13===4) reportA=1-injected;
       reference=reportA;
       scorerCause='reference-copies-primary';
     }
