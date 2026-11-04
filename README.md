@@ -1,6 +1,10 @@
 # CompAware
 ### A different substrate. A question of its own.
 
+## Optical Data-Path Research Candidate (R9)
+
+[Read the R9 optical transport protocol](docs/OPTICAL_TRANSPORT_R9.md): competing functional hypotheses, classical/coherent toy-model comparisons, copper/optical/hybrid ablations, fault injection and zero authority. **Proposal only, not a consciousness finding or deployed hardware.**
+
 **CompAware** is a Φ369 Labs open research initiative investigating **Computational Awareness on computational systems' own terms**.
 
 > Define nothing by imitation. Discover through observation.
